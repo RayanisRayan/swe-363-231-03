@@ -163,7 +163,8 @@ footer{
 	justify-content: center;
 }
 .footernav{
-	
+	padding-left: 1rem;
+	padding-right: 1rem;
 	margin-top: 1%;
 	margin-bottom: 1%;
 	border-right: 2px solid #E9E9E9;
