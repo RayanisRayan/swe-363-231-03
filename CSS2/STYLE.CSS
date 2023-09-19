@@ -16,3 +16,42 @@ a{
     text-transform: uppercase;
     background-color: gold;
 }
+h2{
+    font-family: sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    text-transform: capitalize;
+}
+h2 > p {
+    font-size: x-large;
+}
+td{
+    background-color: lightblue; 
+}
+td:hover{
+    background-color: bisque;
+}
+*::selection{
+    background-color: chartreuse; 
+}
+nav{
+    display: inline;
+}
+nav ul li a {
+    text-decoration: none;
+}
+a.first{
+    text-decoration: underline;
+}
+
+a:not(nav a){
+    cursor: pointer;
+}
+#iname{
+    height: 50px;
+}
+
+input{
+    height: 20px;
+    border-color: gray;
+}
