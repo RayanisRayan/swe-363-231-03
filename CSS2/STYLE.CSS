@@ -1,0 +1,18 @@
+/* css for css2 ex 2-3 */
+td.top{
+    background-color: red;
+}
+th{
+    text-transform: uppercase;
+}
+em{
+    background-color: blue;
+}
+a{
+    color: green;
+}
+
+#the_most_important{
+    text-transform: uppercase;
+    background-color: gold;
+}
