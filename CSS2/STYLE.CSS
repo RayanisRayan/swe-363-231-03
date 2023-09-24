@@ -1,57 +1,104 @@
 /* css for css2 ex 2-3 */
-td.top{
+td.top {
     background-color: red;
 }
-th{
+
+th {
     text-transform: uppercase;
 }
-em{
+
+em {
     background-color: blue;
 }
-a{
+
+a {
     color: green;
 }
 
-#the_most_important{
+#the_most_important {
     text-transform: uppercase;
     background-color: gold;
 }
-h2{
+
+h2 {
     font-family: sans-serif;
 }
-h1,h2,h3,h4,h5,h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     text-transform: capitalize;
 }
-h2 > p {
+
+h2>p {
     font-size: x-large;
 }
-td{
-    background-color: lightblue; 
+
+td {
+    background-color: lightblue;
 }
-td:hover{
+
+td:hover {
     background-color: bisque;
 }
-*::selection{
-    background-color: chartreuse; 
+
+*::selection {
+    background-color: chartreuse;
 }
-nav{
+
+nav {
     display: inline;
 }
+
 nav ul li a {
     text-decoration: none;
 }
-a.first{
+
+a.first {
     text-decoration: underline;
 }
 
-a:not(nav a){
+a:not(nav a) {
     cursor: pointer;
 }
-#iname{
+
+#iname {
     height: 50px;
 }
 
-input{
+input {
     height: 20px;
     border-color: gray;
+}
+
+h1 {
+    color: var(--light-text-color, #FFF);
+    font-family: Montserrat;
+    font-size: 40.355px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 55.662px;
+    /* 137.931% */
+    letter-spacing: 0.139px;
+}
+h4{
+    color: var(--light-text-color, #FFF);
+font-family: Montserrat;
+font-size: 13.915px;
+font-style: normal;
+font-weight: 500;
+line-height: 20.873px; /* 150% */
+letter-spacing: 0.139px;
+}
+p{
+    color: var(--light-text-color, #FFF);
+font-family: Montserrat;
+font-size: 9.741px;
+font-style: normal;
+font-weight: 500;
+line-height: 13.915px; /* 142.857% */
+letter-spacing: 0.139px;
 }

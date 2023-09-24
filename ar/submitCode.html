@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Submition</title>
+</head>
+
+<body>
+    <h2>Present Your Own Course, but first let's get to know you better.</h2>
+
+
+    <form action="submited.html">
+        <section>
+            <label for="name" autocomplete="nam">First name</label>
+            <input placeholder="Rayan" type="text" name="Name" id="name">
+
+            <label for="LName">Last name</label>
+            <input placeholder="Alamrani" type="text" name="Lname" id="LName" autocomplete="lastname">
+        </section>
+        <section>
+            <label for="Code">Upload your Code:</label>
+            <input type="file" name="Code" />
+        </section>
+        <section>
+            <label for="email">Email Address</label>
+            <input type="email" name="email" placeholder="ex@gmail.com" autocomplete="@gmail.com">
+        </section>
+        <section>
+            <label for="code-Subject">Choose language of code:</label>
+            <input list="Type" id="Course-Subject" name="code-Subject" />
+
+            <datalist id="Type">
+                <option value="C++"></option>
+                <option value="Java Script"></option>
+                <option value="HTML"></option>
+                <option value="Python"></option>
+                <option value="C#"></option>
+            </datalist>
+        </section>
+        <section>
+            <label><b>gender:</b></label>
+
+            <label for="male">male</label>
+            <input type="radio" name="gender" id="male">
+
+            <label for="female">female</label>
+            <input type="radio" name="gender" id="female">
+        </section>
+        <section>
+            <label for="submitdate">Enter time of submition</label>
+            <input type="time" name="submitdate" value="2:45"/>
+
+        </section>
+        
+        <section>
+            <label for="honsety">by checking this box you agree that the code is completly written by you and is free of a paid license</label>
+            <input type="checkbox" id="honsety" required>
+        </section>
+        <section>
+            <button type="submit">Submit</button>
+        </section>
+
+    </form>
+</body>
+
+</html>
