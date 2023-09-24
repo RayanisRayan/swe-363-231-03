@@ -170,3 +170,25 @@ nav:hover p{
 #fourth{
 	transition-delay: 2s;
 }
+body *:not(.loader){
+	opacity: 0;
+	animation-name: intro;
+	animation-duration: 1s;
+	animation-delay: 2s;
+	animation-fill-mode:forwards;
+}
+@keyframes intro{
+	from{opacity:0;}
+	to{opacity: 1;}
+}
+.loader{
+	opacity: 1;
+	animation-name: outro;
+	animation-duration: 2s ;
+	
+	animation-fill-mode:forwards;
+}
+@keyframes outro{
+	from{opacity:1;}
+	to{opacity: 0;}
+}
