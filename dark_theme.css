@@ -79,7 +79,7 @@ footer{
 	flex-direction: column;
 	justify-content: center;
 	margin: 0;
-	transition: background-color 3s;
+	transition: background-color 1s;
 }
 .footernav:hover{
 	background-color: #94ccde;
@@ -109,7 +109,7 @@ main{
 	border-radius: 0.5vw;
 	border: #3B4252 0.1vw;
 	background-color: #3B4252;
-	height: 79vh;
+	height: 100vh;
 	width: 50%;
 	margin: 3vh auto;
 	box-shadow: 3px 3px 1px 1px #2e3236;
@@ -153,8 +153,12 @@ line-height: 13.915px; /* 142.857% */
 letter-spacing: 0.139px;
 }
 nav{
+	top: 0;
+	position: fixed;
 	display: flex;
-	
+	background-color: #333843;
+	width: 100%;
+	z-index: 1;
 }
 nav p{
 	margin: 10px;
@@ -182,6 +186,8 @@ body *:not(.loader){
 	to{opacity: 1;}
 }
 .loader{
+	position: absolute;
+	z-index: 1;
 	opacity: 1;
 	animation-name: outro;
 	animation-duration: 2s ;
