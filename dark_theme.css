@@ -232,7 +232,7 @@ main img{
 	bottom: 0;
 	z-index: 1;
 }
-p.card{
+p.cardcustom{
 	text-align: start;
 	position: relative;
 	left: 10px;
