@@ -1,0 +1,25 @@
+body{
+	background-color: #2E3440;
+	overflow-x: hidden;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 50vh;
+}
+.card{
+    height: 30%;
+    width: 25%;
+    margin: 0 3%;
+}
+.card-body{
+    text-align: center;
+    font-size: 5rem;
+    
+}
+h1{
+    text-align: center;
+    color: white;
+}
