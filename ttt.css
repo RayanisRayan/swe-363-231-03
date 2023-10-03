@@ -23,3 +23,16 @@ h1{
     text-align: center;
     color: white;
 }
+.reset{
+    margin: 10px auto;
+    
+}
+.reset p{
+    text-align: center;
+    font-size: x-large;
+    vertical-align: middle;
+    font-weight: 700;
+}
+div.reset:hover{
+    background-color: gray;
+}

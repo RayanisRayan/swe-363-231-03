@@ -1,17 +1,20 @@
 const cells=document.getElementsByClassName("card-body")
 const head=document.querySelector(".announce")
+const rst=document.querySelector(".reset")
 let turn ='X'
 let num=0
 let win=false
 draw=false
 console.log(head)
 console.log(cells)
+
 for(let i=0;i<cells.length;i++){
     cells.item(i).addEventListener('click',function handler(event){
         if(!win && !draw){
             console.log("clicked")
             console.log(this.innerText)
             if(this.innerText.length===0){
+                cells[i].style.backgroundColor=turn==='X'? "#007bff":"#20c997"
                 this.innerText=turn
                 win= checkwin(cells)
                 num+=1
@@ -26,9 +29,6 @@ for(let i=0;i<cells.length;i++){
                 
             }
             
-        }
-        if(draw){
-
         }
     })
 }
@@ -54,3 +54,14 @@ function checkwin(cells){
     }
     return false
 }
+rst.addEventListener('click',function handler(event){
+    for (const cell of cells) {
+        cell.innerText="";
+        cell.style.backgroundColor="#fff"
+    }
+    num="0"
+    head.innerText="Play"
+    turn='X'
+    win=false
+    draw=false
+})
