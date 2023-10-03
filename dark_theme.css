@@ -113,6 +113,7 @@ main{
 	width: 50%;
 	margin: 3vh auto;
 	box-shadow: 3px 3px 1px 1px #2e3236;
+	transition: width 1s ease-in;
 	
 }
 
@@ -121,6 +122,7 @@ main section{
 }
 body{
 	background-color: #2E3440;
+	overflow-x: hidden;
 }
 section h1{
 	text-align: center;
@@ -243,4 +245,21 @@ p.card{
 .textcontain{
 	width: 100%;
 	padding: 0 1rem;
+}
+html,body{
+    overflow-x: hidden;
+}
+@media screen and (max-width:769px) and (min-device-width : 320px){
+	main{
+		background-color: #2E3440;
+		width: 95%;
+		box-shadow: none;
+		border: none;
+	}
+	table{
+		padding: 0 1rem;
+	}
+	body{
+		width: auto;
+	}
 }
