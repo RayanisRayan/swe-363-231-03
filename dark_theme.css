@@ -115,6 +115,7 @@ main{
 	box-shadow: 3px 3px 1px 1px #2e3236;
 	
 }
+
 main section{
 	display: inline;
 }
@@ -197,4 +198,23 @@ body *:not(.loader){
 @keyframes outro{
 	from{opacity:1;}
 	to{opacity: 0;}
+}
+article.test,.frontTable,tr,thead,tbody{
+	width:100%;
+}
+.frontTable{
+	table-layout: fixed;
+	border-collapse: collapse;
+}
+.frontTable td{
+	width: 25%;
+	text-align: center;
+	border-collapse: collapse;
+	border-bottom: 1px solid #4e525b;
+	
+	border-collapse: collapse;
+	margin-left: 0;
+}
+.Computerimg{
+	background-image: url(computer.jpg);
 }
