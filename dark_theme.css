@@ -61,7 +61,7 @@ img{
 footer{
 	height: 5vh	;
 	margin-top: 0;
-	position: fixed;
+	
 	bottom: 0;
 	display: flex;
 	background-color: #2E3440;
@@ -216,5 +216,31 @@ article.test,.frontTable,tr,thead,tbody{
 	margin-left: 0;
 }
 .Computerimg{
-	background-image: url(computer.jpg);
+	position: relative;
+	width: 70%;
+}
+main img{
+	position: relative;
+	max-width: 100%;
+	z-index: -1;
+}
+.watermark{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	z-index: 1;
+}
+p.card{
+	text-align: start;
+	position: relative;
+	left: 10px;
+}
+.carddate{
+	position: absolute;
+	top: 0;
+	right: 20px;
+}
+.textcontain{
+	width: 100%;
+	padding: 0 1rem;
 }
