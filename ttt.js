@@ -65,3 +65,27 @@ rst.addEventListener('click',function handler(event){
     win=false
     draw=false
 })
+/* <footer>
+<aside class="footernav footer1">
+    <a href="mission.html">
+        <h3>Our mission</h3>
+    </a>
+</aside>
+<aside class="footernav footer2">
+    <a href="contact.html">
+        <h3>Contact</h3>
+    </a>
+</aside>
+<aside class="footernav footer3">
+    <a href="submitCode.html">
+        <h3>Sumbit Code</h3>
+    </a>
+</aside>
+<aside class="footernav ">
+    <h3><a href="ttt.html"><h3>Play TTT</h3></a></h3>
+</aside>
+<aside class="footernav footer4">
+    <h3>Copy Right is held by fake student</h3>
+</aside>
+</footer> */
+

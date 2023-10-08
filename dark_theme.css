@@ -263,3 +263,6 @@ html,body{
 		width: auto;
 	}
 }
+footer .footernav a{
+	color: white;
+}
