@@ -45,3 +45,17 @@ x.addEventListener("click",e=>{
     console.log(x.innerText)
     alert.setAttribute("style","display:none")
 })
+
+let number=document.querySelector("#nofday")
+
+async function nomberofday() {
+    console.log("movies");
+    const response = await fetch("https://api.math.tools/numbers/nod");
+    const movies = await response.json();
+    console.log(movies['contents']['nod']['numbers']);
+    needed= movies['contents']['nod']['numbers']
+    number.innerText= 'number: ' +needed['number']+", "+needed['prime-facts']['prime']['description']+" "+needed['prime-facts']['prime']['display']
+  }
+nomberofday()
+
+
