@@ -1,4 +1,4 @@
-const cells=document.getElementsByClassName("card-body")
+const x=document.getElementsByClassName("card-body")
 const head=document.querySelector(".announce")
 const rst=document.querySelector(".reset")
 class ttt{
@@ -16,33 +16,55 @@ let turn ='X'
 // let num=0
 // let win=false
 // draw=false
+var cells = [].slice.call(x);
 console.log(tick.win)
 console.log(cells)
-
-for(let i=0;i<cells.length;i++){
-    cells.item(i).addEventListener('click',function handler(event){
-        if(!tick.win && !tick.draw){
-            console.log("clicked")
-            console.log(this.innerText)
-            if(this.innerText.length===0){
-                cells[i].style.backgroundColor=turn==='X'? "#007bff":"#20c997"
-                this.innerText=turn
-                tick.win= checkwin(cells)
-                tick.num+=1
-                tick.draw= tick.num===9? true: false
-                if(!tick.draw &&!tick.win){
-                    turn= turn==='X'? 'O':'X'
-                    head.innerText= turn+" play"
-                }
-                else{
-                    head.innerText=tick.draw?"DRAW": turn+" wins"
-                }
-                
+cells.map((i)=>i.addEventListener('click',function handler(event){
+    if(!tick.win && !tick.draw){
+        console.log("clicked")
+        console.log(this.innerText)
+        if(this.innerText.length===0){
+           this.style.backgroundColor=turn==='X'? "#007bff":"#20c997"
+            this.innerText=turn
+            tick.win= checkwin(cells)
+            tick.num+=1
+            tick.draw= tick.num===9? true: false
+            if(!tick.draw &&!tick.win){
+                turn= turn==='X'? 'O':'X'
+                head.innerText= turn+" play"
+            }
+            else{
+                head.innerText=tick.win? turn+" wins":"DRAW"
             }
             
         }
-    })
-}
+        
+    }
+}))
+// for(let i=0;i<cells.length;i++){
+//     cells.item(i).addEventListener('click',function handler(event){
+//         if(!tick.win && !tick.draw){
+//             console.log("clicked")
+//             console.log(this.innerText)
+//             if(this.innerText.length===0){
+//                 cells[i].style.backgroundColor=turn==='X'? "#007bff":"#20c997"
+//                 this.innerText=turn
+//                 tick.win= checkwin(cells)
+//                 tick.num+=1
+//                 tick.draw= tick.num===9? true: false
+//                 if(!tick.draw &&!tick.win){
+//                     turn= turn==='X'? 'O':'X'
+//                     head.innerText= turn+" play"
+//                 }
+//                 else{
+//                     head.innerText=tick.draw?"DRAW": turn+" wins"
+//                 }
+                
+//             }
+            
+//         }
+//     })
+// }
 
 function checkwin(cells){
     for (let i = 0; i <= 6; i=i+3) {
@@ -70,11 +92,11 @@ rst.addEventListener('click',function handler(event){
         cell.innerText="";
         cell.style.backgroundColor="#fff"
     }
-    num="0"
+    tick.num=0
     head.innerText="Play"
     turn='X'
-    win=false
-    draw=false
+    tick.win=false
+    tick.draw=false
 })
 /* <footer>
 <aside class="footernav footer1">
