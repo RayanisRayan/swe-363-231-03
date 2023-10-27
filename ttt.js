@@ -66,6 +66,7 @@ cells.map((i)=>i.addEventListener('click',function handler(event){
 //     })
 // }
 
+
 function checkwin(cells){
     for (let i = 0; i <= 6; i=i+3) {
         
