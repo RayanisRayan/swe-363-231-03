@@ -1,30 +1,41 @@
 const cells=document.getElementsByClassName("card-body")
 const head=document.querySelector(".announce")
 const rst=document.querySelector(".reset")
+class ttt{
+    constructor(){
+        this.draw= false
+        this.win=false
+        this.num=0
+    }
+    checkwinner(cells){
+        return checkwin(cells)
+    }
+}
+tick= new ttt()
 let turn ='X'
-let num=0
-let win=false
-draw=false
-console.log(head)
+// let num=0
+// let win=false
+// draw=false
+console.log(tick.win)
 console.log(cells)
 
 for(let i=0;i<cells.length;i++){
     cells.item(i).addEventListener('click',function handler(event){
-        if(!win && !draw){
+        if(!tick.win && !tick.draw){
             console.log("clicked")
             console.log(this.innerText)
             if(this.innerText.length===0){
                 cells[i].style.backgroundColor=turn==='X'? "#007bff":"#20c997"
                 this.innerText=turn
-                win= checkwin(cells)
-                num+=1
-                draw= num===9? true: false
-                if(!draw &&!win){
+                tick.win= checkwin(cells)
+                tick.num+=1
+                tick.draw= tick.num===9? true: false
+                if(!tick.draw &&!tick.win){
                     turn= turn==='X'? 'O':'X'
                     head.innerText= turn+" play"
                 }
                 else{
-                    head.innerText=draw?"DRAW": turn+" wins"
+                    head.innerText=tick.draw?"DRAW": turn+" wins"
                 }
                 
             }
