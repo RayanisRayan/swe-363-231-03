@@ -1,17 +1,12 @@
-const express=require('express')
+const express=require('express');
 app=express()
+router=require('./router')
 app.use(express.static(__dirname));
-
+app.use(router)
 app.get('/',(req,res)=>{
     res.sendFile(__dirname+'/index.html')
 })
 
-app.get('/contact',(req,res)=>{
-    res.sendFile(__dirname+'/contact.html')
-})
-
-app.get('/ttt',(req,res)=>{
-    res.sendFile(__dirname+'/ttt.html')
 })
 
 app.get('/sumbitcode',(req,res)=>{
